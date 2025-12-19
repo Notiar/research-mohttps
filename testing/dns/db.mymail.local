@@ -2,5 +2,5 @@ $ORIGIN mymail.local.
 @          IN      SOA  dns.mymail.local. admin.mymail.local. 2502011720 7200 3600 1209600 3600
 dns        IN      A    10.225.254.254
 mail       IN      A    10.225.1.2
-mailclient IN      A    10.225.1.3
-webmail    IN      A    10.225.1.4
+mohttps.10 IN     TXT  "mail.mymail.local"
+mohttps.ps IN     TXT  "mail.mymail.local"

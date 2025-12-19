@@ -1,0 +1,13 @@
+type: folder
+model: folder
+id: fl_ZrbhvMiycT
+createdAt: 2025-12-19T17:56:17.263160632
+updatedAt: 2025-12-19T17:56:30.488215338
+workspaceId: wk_uL5jz7iyo4
+folderId: fl_jHzCTtVcD8
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: /outbound
+sortPriority: -1766167000000.0

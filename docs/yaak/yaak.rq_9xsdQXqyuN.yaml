@@ -1,0 +1,29 @@
+type: http_request
+model: http_request
+id: rq_9xsdQXqyuN
+createdAt: 2025-12-19T17:56:05.845652257
+updatedAt: 2025-12-19T18:00:17.927815221
+workspaceId: wk_uL5jz7iyo4
+folderId: fl_ZrbhvMiycT
+authentication: {}
+authenticationType: null
+body:
+  text: |-
+    {
+      "to": "Joe <joe@mymail.local>",
+      "from": "Alex <alex@company.local>",
+      "subject": "Welcome to MoHTTPS!",
+      "body": "So glad you are finally using it, Joe!"
+    }
+bodyType: application/json
+description: ''
+headers:
+- enabled: true
+  name: Content-Type
+  value: application/json
+  id: 9xUCcDMSea
+method: POST
+name: /
+sortPriority: 0.0
+url: ${[ ADDR_COMPANY_SERVER ]}/mohttpsapi/outbound
+urlParameters: []
