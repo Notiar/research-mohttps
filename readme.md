@@ -4,6 +4,10 @@ This is a PoC of a mail server that uses HTTPS REST API instead of classic mail 
 
 We want to make this technology open source and easy to use by everyone. We would really like to make this the industry standard for mail services (yeah, we like to be naive).
 
+## Proposal
+
+1. [Wanted featues](docs/proposal/1-wanted-features.md)
+
 ## Authors
 
 - Martin Petr (https://github.com/MartinGamesCZ)
