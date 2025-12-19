@@ -41,3 +41,38 @@ See [errors](../errors.md).
 1. Message validation (see [mail message](../mail-message.md))
 2. Message sender integrity checks (see [sender integrity](../security/sender-integrity.md))
 3. Message storage
+
+### POST /mohttpsapi/inbound/:messageId/integrity
+
+Checks integrity of a message.
+
+#### Request details
+
+- Authentication: `None`
+- Method: `POST`
+- Path: `/mohttpsapi/inbound/:messageId/integrity`
+- Request body:
+  - `signature`: Signature of the message (see [mail message - signature](../mail-message.md#signature))
+  - `checksum`: Checksum of the message (see [mail message - checksum](../mail-message.md#checksum))
+
+#### Response details
+
+- Status code: `200`
+- Response body: `None`
+- Response headers: `None`
+
+#### Error responses
+
+See [errors](../errors.md).
+
+- Status code: `400`
+- Valid codes:
+  - `INVALID_INTEGRITY` - Integrity is invalid
+- Response body: [error](../errors.md)
+
+#### Inner workings
+
+1. Message integrity check (see [sender integrity](../security/sender-integrity.md))
+
+- Pass - 200
+- Fail - 400 INVALID_INTEGRITY
