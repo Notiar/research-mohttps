@@ -1,0 +1,73 @@
+services:
+  # mymail.net
+  mymaildotnet_server:
+    container_name: mymaildotnet_server
+    tty: true
+    build: ../implementation/server
+    dns: 10.225.254.254
+    networks:
+      mohttps:
+        ipv4_address: 10.225.1.2
+
+  mymaildotnet_client:
+    container_name: mymaildotnet_client
+    tty: true
+    build: ../implementation/client
+    dns: 10.225.254.254
+    networks:
+      mohttps:
+        ipv4_address: 10.225.1.3
+
+  mymaildotnet_webmail:
+    container_name: mymaildotnet_webmail
+    tty: true
+    build: ../implementation/webmail
+    dns: 10.225.254.254
+    networks:
+      mohttps:
+        ipv4_address: 10.225.1.4
+
+  # company.net
+  companydotnet_server:
+    container_name: companydotnet_server
+    tty: true
+    build: ../implementation/server
+    dns: 10.225.254.254
+    networks:
+      mohttps:
+        ipv4_address: 10.225.2.2
+
+  companydotnet_client:
+    container_name: companydotnet_client
+    tty: true
+    build: ../implementation/client
+    dns: 10.225.254.254
+    networks:
+      mohttps:
+        ipv4_address: 10.225.2.3
+
+  companydotnet_webmail:
+    container_name: companydotnet_webmail
+    tty: true
+    build: ../implementation/webmail
+    dns: 10.225.254.254
+    networks:
+      mohttps:
+        ipv4_address: 10.225.2.4
+
+  # DNS server
+  dns:
+    image: coredns/coredns:latest
+    command: -conf /etc/coredns/Corefile -dns.port 53
+    volumes:
+      - ./dns:/etc/coredns
+    networks:
+      mohttps:
+        ipv4_address: 10.225.254.254
+
+networks:
+  mohttps:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.225.0.0/16

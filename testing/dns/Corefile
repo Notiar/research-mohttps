@@ -1,0 +1,18 @@
+.:53 {
+  forward . 8.8.8.8 8.8.4.4
+  log
+  errors
+  health :8080
+}
+
+mymail.net:53 {
+  file /etc/coredns/db.mymail.net
+  log
+  errors
+}
+
+company.net:53 {
+  file /etc/coredns/db.company.net
+  log
+  errors
+}
