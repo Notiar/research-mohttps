@@ -1,0 +1,14 @@
+type: workspace
+model: workspace
+id: wk_uL5jz7iyo4
+createdAt: 2025-12-19T17:49:10.351155425
+updatedAt: 2025-12-19T17:49:10.351158987
+authentication: {}
+authenticationType: null
+description: ''
+headers: []
+name: NotiarResearch - MoHTTPS
+encryptionKeyChallenge: null
+settingValidateCertificates: true
+settingFollowRedirects: true
+settingRequestTimeout: 0

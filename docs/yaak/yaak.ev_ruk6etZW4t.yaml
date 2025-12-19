@@ -1,0 +1,45 @@
+type: environment
+model: environment
+id: ev_ruk6etZW4t
+workspaceId: wk_uL5jz7iyo4
+createdAt: 2025-12-19T17:49:20.931301858
+updatedAt: 2025-12-19T17:52:54.137506027
+name: Local
+public: true
+base: false
+parentModel: environment
+parentId: ev_ZNDHwn5HLE
+variables:
+- enabled: true
+  name: ADDR_COMPANY_SERVER
+  value: http://10.225.1.2:3000
+  id: 7TzMYMdd4I
+- enabled: true
+  name: ADDR_COMPANY_CLIENT
+  value: http://10.225.1.3:3000
+  id: kG4kcQ0s9C
+- enabled: true
+  name: ADDR_MYMAIL_SERVER
+  value: http://10.225.2.2:3000
+  id: hp82yQy5fd
+- enabled: true
+  name: ADDR_MYMAIL_CLIENT
+  value: http://10.225.2.3:3000
+  id: 7pNcij4Ntd
+- enabled: true
+  name: DNS_COMPANY_SERVER
+  value: mail.company.local
+  id: iIaY9WkB4t
+- enabled: true
+  name: DNS_COMPANY_CLIENT
+  value: mailclient.company.local
+  id: IgpWq3NWua
+- enabled: true
+  name: DNS_MYMAIL_SERVER
+  value: mail.mymail.local
+  id: YMIFSvDmIr
+- enabled: true
+  name: DNS_MYMAIL_CLIENT
+  value: mailclient.mymail.local
+  id: M22U40aPGB
+color: null
