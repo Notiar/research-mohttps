@@ -7,7 +7,8 @@ We want to make this technology open source and easy to use by everyone. We woul
 ## Proposal
 
 1. [Wanted features](docs/proposal/wanted-features.md)
-2. [Roles](docs/proposal/roles.md)
+2. [Inbound server](docs/proposal/inbound-server/proposal.md)
+3. [Outbound server](docs/proposal/outbound-server/proposal.md)
 
 ## Authors
 
