@@ -5,14 +5,14 @@
   health :8080
 }
 
-mymail.net:53 {
-  file /etc/coredns/db.mymail.net
+mymail.local:53 {
+  file /etc/coredns/db.mymail.local
   log
   errors
 }
 
-company.net:53 {
-  file /etc/coredns/db.company.net
+company.local:53 {
+  file /etc/coredns/db.company.local
   log
   errors
 }

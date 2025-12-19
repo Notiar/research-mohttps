@@ -1,7 +1,7 @@
 services:
-  # mymail.net
-  mymaildotnet_server:
-    container_name: mymaildotnet_server
+  # mymail.local
+  mymail_server:
+    container_name: mymail_server
     tty: true
     build: ../implementation/server
     dns: 10.225.254.254
@@ -9,8 +9,8 @@ services:
       mohttps:
         ipv4_address: 10.225.1.2
 
-  mymaildotnet_client:
-    container_name: mymaildotnet_client
+  mymail_client:
+    container_name: mymail_client
     tty: true
     build: ../implementation/client
     dns: 10.225.254.254
@@ -18,8 +18,8 @@ services:
       mohttps:
         ipv4_address: 10.225.1.3
 
-  mymaildotnet_webmail:
-    container_name: mymaildotnet_webmail
+  mymail_webmail:
+    container_name: mymail_webmail
     tty: true
     build: ../implementation/webmail
     dns: 10.225.254.254
@@ -27,9 +27,9 @@ services:
       mohttps:
         ipv4_address: 10.225.1.4
 
-  # company.net
-  companydotnet_server:
-    container_name: companydotnet_server
+  # company.local
+  company_server:
+    container_name: company_server
     tty: true
     build: ../implementation/server
     dns: 10.225.254.254
@@ -37,8 +37,8 @@ services:
       mohttps:
         ipv4_address: 10.225.2.2
 
-  companydotnet_client:
-    container_name: companydotnet_client
+  company_client:
+    container_name: company_client
     tty: true
     build: ../implementation/client
     dns: 10.225.254.254
@@ -46,8 +46,8 @@ services:
       mohttps:
         ipv4_address: 10.225.2.3
 
-  companydotnet_webmail:
-    container_name: companydotnet_webmail
+  company_webmail:
+    container_name: company_webmail
     tty: true
     build: ../implementation/webmail
     dns: 10.225.254.254
