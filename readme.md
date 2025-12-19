@@ -6,7 +6,7 @@ We want to make this technology open source and easy to use by everyone. We woul
 
 ## Proposal
 
-1. [Wanted featues](docs/proposal/1-wanted-features.md)
+1. [Wanted features](docs/proposal/1-wanted-features.md)
 
 ## Authors
 
