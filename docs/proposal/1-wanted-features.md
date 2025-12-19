@@ -25,4 +25,5 @@ These are the features and qualities that we want our technology to have.
 
 ## Authenticity, Integrity and Evidentiability
 
-- MoHTTPS should be highly authentic and have a high evidentiary value
+- MoHTTPS should be highly authentic and have a high evidentiary value.
+- MoHTTPS should be decentralized.
